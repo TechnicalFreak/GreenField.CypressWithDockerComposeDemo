@@ -1,9 +1,9 @@
 # Cypress with Docker-Compose Demo
 
 ## Description
-This demo shows, how to prepare the environment for using cypress in pipelines. With docker-compose exists the possibility, before using in pipelines, to test it in development-environment.
+This demo shows, how to prepare the environment for using cypress in pipelines. With docker-compose it's possible to test in development-environment and later in the pipeline in the same isolated way.
 
-The demo is an angular-app. When starting the angular-app, you only see "Hello World" on the screen. For this page, we add a test, that checks, if the text is displayed.
+The demo is an angular-app. When starting the angular-app, on the screen will be displayed "Hello World". For this page, we add a test, that checks, if the text is displayed.
 
 ![Github Logo](./github/images/hello-world-page.png)
 
