@@ -359,7 +359,7 @@ Azure-Devops needs a yml-configuration-file for executing deployments. Here is a
 
 The artifacts of a pipeline-run are added in this repo
 
-./azure-devops-artifacts
+    ./azure-devops-artifacts
 
 The created videos in the results folder shows the different urls, which are tested.
 dev-report -> calls frontend-url creatd in docker-compose
