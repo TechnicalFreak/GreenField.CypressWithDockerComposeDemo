@@ -1,5 +1,13 @@
 # Cypress with Docker-Compose Demo
 
+
+## GetStarted
+MAC/LINUS/Windows with bash
+baseUrl=http://frontend:4200 docker-compose up --exit-code-from cypress --build
+
+Windows Powershell
+$env:baseUrl="http://frontend:4200"; docker-compose up --exit-code-from cypress --build
+
 ## Description
 This demo shows, how to prepare the environment for using cypress in pipelines. With docker-compose it's possible to test in development-environment and later in the pipeline in the same isolated way.
 
