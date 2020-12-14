@@ -173,6 +173,10 @@ We install cypress in a folder "e2e". Cypress gets an own package.json. The reas
                 source: ./e2e/results
                 target: /e2e/results
 
+In the local dev-environment, the volumes-section offers the possibility to get the test-results in folder /e2e/results.
+
+A pipeline has access to the test-results in the source-directory in the same path.
+
 - Add .dockerignore files in root folder and e2e folder with content: 
 
         node_modules
