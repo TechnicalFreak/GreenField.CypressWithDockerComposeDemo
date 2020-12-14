@@ -1,0 +1,11 @@
+{
+    "baseUrl": "http://localhost:4200",
+    "reporter": "cypress-mochawesome-reporter",
+    "reporterOptions": {
+        "charts": true,
+        "html": true,
+        "json": true,
+        "reportDir": "results/reports",
+        "reportFilename": "report"
+    }
+}

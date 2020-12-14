@@ -1,0 +1,30 @@
+version: '3.2'
+services:
+  frontend:
+    build:
+      context: .
+    expose:
+      - 4200
+    logging:
+      driver: local
+  cypress:
+    depends_on:
+      - frontend
+    logging:
+      driver: local
+    environment:
+      # Important!!! The baseUrl can be set with the 
+      # docker-compose up command. So it is possible
+      # to set an url dynamically in the pipeline.
+      - CYPRESS_baseUrl=${baseUrl}
+      - CYPRESS_screenshotsFolder=/results/screenshots
+      - CYPRESS_videosFolder=/results/videos
+    build:
+      context: ./e2e
+    volumes:
+      - type: bind
+        source: ./e2e/results
+        target: /results
+      - type: bind
+        source: ./e2e/results
+        target: /e2e/results

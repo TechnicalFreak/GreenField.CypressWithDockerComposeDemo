@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-13T23:02:51.724Z",
+    "end": "2020-12-13T23:02:54.407Z",
+    "duration": 2683,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3845f378-880a-4b92-9eec-4b20c2cd15b9",
+      "title": "",
+      "fullFile": "cypress/integration/sample_spec.js",
+      "file": "cypress/integration/sample_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fa582f17-9038-4723-9118-84a67671948c",
+          "title": "My First Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should display HelloWorld on the Page",
+              "fullTitle": "My First Test Should display HelloWorld on the Page",
+              "timedOut": null,
+              "duration": 2653,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get('h1').contains('Hello World');",
+              "err": {},
+              "uuid": "a6df39ec-e96f-4878-91cb-1213bfcba4b6",
+              "parentUUID": "fa582f17-9038-4723-9118-84a67671948c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a6df39ec-e96f-4878-91cb-1213bfcba4b6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2653,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true,
+        "reportFilename": "report"
+      },
+      "version": "5.1.0"
+    }
+  }
+}
