@@ -2,7 +2,7 @@
 
 
 ## GetStarted
-MAC/LINUS/Windows with bash
+MAC/LINUX/Windows with bash
 
     baseUrl=http://frontend:4200 docker-compose up --exit-code-from cypress --build
 
