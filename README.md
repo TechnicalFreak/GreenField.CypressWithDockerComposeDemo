@@ -251,6 +251,9 @@ I am working on windows with the git bash. So I am using the LINUX commands for 
 
 Now in the folder /e2e/results/videos there should be the video of the executed test.
 
+For testing, a failed test, change the tested text in the sample_spec.js file. After running the test, with check for text, that is not displayed on the page, the result looks like
+
+    cypresswithdockercomposedemo_cypress_1 exited with code 1
 
 ## Adding reports
 At the beginning of this tutorial, we added a dependency "cypress-mochawesome-reporter" to the cypress package.json. To create reports after running a test, we only need to add some code to the cypress.json file.
