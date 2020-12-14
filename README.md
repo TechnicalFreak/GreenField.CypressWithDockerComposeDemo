@@ -173,9 +173,9 @@ We install cypress in a folder "e2e". Cypress gets an own package.json. The reas
                 source: ./e2e/results
                 target: /e2e/results
 
-In the local dev-environment, the volumes-section offers the possibility to get the test-results in folder /e2e/results.
+  In the local dev-environment, the volumes-section offers the possibility to get the test-results in folder /e2e/results.
 
-A pipeline has access to the test-results in the source-directory in the same path.
+  A pipeline has access to the test-results in the source-directory in the same path.
 
 - Add .dockerignore files in root folder and e2e folder with content: 
 
@@ -286,7 +286,7 @@ Azure-Devops needs a yml-configuration-file for executing deployments. Here is a
         inputs:
             containerregistrytype: 'Azure Container Registry'
             azureSubscription: 'Visual Studio Enterprise(XXXXXXXXXXXXXXXXXXXXXXXXXX)'
-            azureContainerRegistry: '{"loginServer":"opcontainerregistry.azurecr.io", "id" : "/subscriptions/XXXXXXXXXXXXXXXXXXXXXXXX/resourceGroups/Custom-Ressource-Group/providers/Microsoft.ContainerRegistry/registries/XXXXXXXXXRegistry"}'
+            azureContainerRegistry: '{"loginServer":"XXXXXXXXXXregistry.azurecr.io", "id" : "/subscriptions/XXXXXXXXXXXXXXXXXXXXXXXX/resourceGroups/Custom-Ressource-Group/providers/Microsoft.ContainerRegistry/registries/XXXXXXXXXRegistry"}'
             dockerComposeFile: '**/docker-compose.yml'
             action: 'Run a Docker Compose command'
             dockerComposeCommand: 'up --exit-code-from cypress --build'
@@ -360,3 +360,7 @@ Azure-Devops needs a yml-configuration-file for executing deployments. Here is a
 The artifacts of a pipeline-run are added in this repo
 
 ./azure-devops-artifacts
+
+The created video in the results folder shows the different urls, which are tested.
+dev-report -> calls frontend-url creatd in docker-compose
+staging-report -> calls frontend-url of deployed app 
