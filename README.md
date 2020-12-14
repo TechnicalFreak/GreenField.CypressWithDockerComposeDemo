@@ -93,7 +93,7 @@ We install cypress in a folder "e2e". Cypress gets an own package.json. The reas
 
     The baseUrl could be overridden by an environment-variable CYPRESS_baseUrl. In this demo, it happens in the docker-compose.yml file.
 
-- Remove in folder cypresss/integration the examples folder
+- Remove in folder cypress/integration the examples folder
 - Add sample_spec.js
 
         /// <reference types="Cypress" />
