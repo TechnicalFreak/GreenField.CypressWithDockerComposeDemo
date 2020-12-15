@@ -347,7 +347,7 @@ Azure-Devops needs a yml-configuration-file for executing deployments. Here is a
             artifactName: stagingReport
 
 
-### Important steps
+### What happens in the yml-configuration file?
 - Cypress tests are running completely isolated in docker-compose, like in the development-environment
 - The results are added to the artifacts
 - If the tests are successful, the app deploys to an staging environment
