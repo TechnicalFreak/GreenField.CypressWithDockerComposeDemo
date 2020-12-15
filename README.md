@@ -375,5 +375,6 @@ The artifacts of a pipeline-run are added in this repo
     ./azure-devops-artifacts
 
 The created videos in the results folder show the different urls, which are tested.
-dev-report -> calls frontend-url creatd in docker-compose
-staging-report -> calls frontend-url of deployed app 
+
+    dev-report -> calls frontend-url creatd in docker-compose
+    staging-report -> calls frontend-url of deployed app 
