@@ -25,8 +25,8 @@ The test-ressources we don't need can be removed:
 
 
 ## Adding Cypress
-We install cypress in a folder "e2e". Cypress gets an own package.json. The reason is, that cypress doesn't need all dependencies, that are used in the angular-app. When later the tests are running, the build-time is much faster.
-- Create Folder "e2e" and navigate in the new folder
+We install cypress in a folder "e2e". Cypress gets an own package.json. The reason is, that cypress don't need all dependencies, that are used in the angular-app. When later the tests are running, the build-time is much faster.
+- Create Folder "e2e" and navigate to the new folder
 - Create package.json with "npm init".
         
         $ npm init
@@ -103,7 +103,7 @@ We install cypress in a folder "e2e". Cypress gets an own package.json. The reas
 
     The baseUrl could be overridden by an environment-variable CYPRESS_baseUrl. In this demo, it happens in the docker-compose.yml file.
 
-- Remove in folder cypress/integration the examples folder
+- Remove the examples folder in folder cypress/integration 
 - Add sample_spec.js
 
         /// <reference types="Cypress" />
@@ -187,11 +187,11 @@ We install cypress in a folder "e2e". Cypress gets an own package.json. The reas
 
   A pipeline has access to the test-results in the source-directory in the same path.
 
-- Add .dockerignore files in root folder and e2e folder with content: 
+- Add .dockerignore files in root folder and e2e folder with the following content: 
 
         node_modules
 
-- For the reports, it is important to create a results folder in the e2e folder. In the new empty results-folder, create a .gitkeep file.
+- For the reports, it is important to create a results folder to the e2e folder. In the new empty results-folder, create a .gitkeep file.
 
     ![Github Logo](./github/images/gitkeep.png)
 
@@ -199,7 +199,7 @@ We install cypress in a folder "e2e". Cypress gets an own package.json. The reas
 ## Executing docker-compose for running cypress-tests
 
 The commands for executing tests are different between mac and windows.
-Here is a common explanation from the web, that helps, to use the correct commands.
+Here is a common explanation from the web, that helps to use the correct commands.
 
     # EnvirionmentVariables to docker-compose up
     MAC / LINUX
@@ -249,9 +249,9 @@ I am working on windows with the git bash. So I am using the LINUX commands for 
         In a later scenarion, this tells a pipeline, that the tests are finished. Otherwise pipelines are running endless.
         
 
-Now in the folder /e2e/results/videos there should be the video of the executed test.
+In the folder /e2e/results/videos there should be the video of the executed test.
 
-For testing, a failed test, change the tested text in the sample_spec.js file. After running the test, with check for text, that is not displayed on the page, the result looks like
+The result of a failed text looks like the next line. For provocating a failed test, change the test-case in the sample_spec.js file.
 
     cypresswithdockercomposedemo_cypress_1 exited with code 1
 
