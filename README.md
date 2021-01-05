@@ -103,8 +103,9 @@ We install cypress in a folder "e2e". Cypress gets an own package.json. The reas
 
     The baseUrl could be overridden by an environment-variable CYPRESS_baseUrl. In this demo, it happens in the docker-compose.yml file.
 
-- Remove the examples folder in folder cypress/integration 
-- Add sample_spec.js
+- Remove the examples folder 
+- In folder cypress/integration 
+  add sample_spec.js
 
         /// <reference types="Cypress" />
 
@@ -251,7 +252,7 @@ I am working on windows with the git bash. So I am using the LINUX commands for 
 
 In the folder /e2e/results/videos there should be the video of the executed test.
 
-The result of a failed text looks like the next line. For provocating a failed test, change the test-case in the sample_spec.js file.
+The result of a failed test looks like the next line. For provocating a failed test, change the test-case in the sample_spec.js file.
 
     cypresswithdockercomposedemo_cypress_1 exited with code 1
 
